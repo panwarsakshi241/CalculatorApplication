@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvExpression"
+        android:layout_width="match_parent"
+        android:layout_height="80sp"
+        android:textColor="@color/numberActionButton"
+        android:gravity="end"
+        android:maxLines="1"
+        android:textSize="40sp"
+        android:background="@color/black"/>
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:textColor="@color/numberActionButton"
+        android:gravity="end"
+        android:maxLines="1"
+        android:textSize="30sp"
+        android:background="@color/black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvClear"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/actionButton"
+                android:gravity="center"
+                android:text="@string/cancelTextView"
+                android:textColor="@color/white"
+                android:textSize="21sp"
+                android:onClick="cancelEvent"/>
+
+            <TextView
+                android:id="@+id/tvOpen"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/actionButton"
+                android:textColor="@color/white"
+                android:textSize="21sp"
+                android:gravity="center"
+                android:text="@string/OpenTextView"/>
+
+            <TextView
+                android:id="@+id/tvClose"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/actionButton"
+                android:textColor="@color/white"
+                android:textSize="21sp"
+                android:gravity="center"
+                android:text="@string/CloseTextView"/>
+
+            <TextView
+                android:id="@+id/tvDivision"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/actionButton"
+                android:textColor="@color/white"
+                android:textSize="21sp"
+                android:gravity="center"
+                android:text="@string/DevideTextView"
+                android:onClick="operatorEvent"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvSeven"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/numberActionButton"
+                android:textColor="@color/white"
+                android:textSize="21sp"
+                android:gravity="center"
+                android:text="@string/SevenTextView"
+                android:onClick="numberEvent"/>
+
+            <TextView
+                android:id="@+id/tvEight"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/numberActionButton"
+                android:textColor="@color/white"
+                android:textSize="21sp"
+                android:gravity="center"
+                android:text="@string/EightTextView"
+                android:onClick="numberEvent"/>
+
+            <TextView
+                android:id="@+id/tvNine"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/numberActionButton"
+                android:textColor="@color/white"
+                android:textSize="21sp"
+                android:gravity="center"
+                android:text="@string/NineTextView"
+                android:onClick="numberEvent"/>
+
+            <TextView
+                android:id="@+id/tvMultiply"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/actionButton"
+                android:textColor="@color/white"
+                android:textSize="21sp"
+                android:gravity="center"
+                android:text="@string/MultiplyTextView"
+                android:onClick="operatorEvent"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvFour"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/numberActionButton"
+                android:textColor="@color/white"
+                android:textSize="21sp"
+                android:gravity="center"
+                android:text="@string/FourTextView"
+                android:onClick="numberEvent"/>
+
+            <TextView
+                android:id="@+id/tvFive"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/numberActionButton"
+                android:textColor="@color/white"
+                android:textSize="21sp"
+                android:gravity="center"
+                android:text="@string/FiveTextView"
+                android:onClick="numberEvent"/>
+
+            <TextView
+                android:id="@+id/tvSix"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/numberActionButton"
+                android:textColor="@color/white"
+                android:textSize="21sp"
+                android:gravity="center"
+                android:text="@string/SixTextView"
+                android:onClick="numberEvent"/>
+
+            <TextView
+                android:id="@+id/tvMinus"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/actionButton"
+                android:textColor="@color/white"
+                android:textSize="21sp"
+                android:gravity="center"
+                android:text="@string/MinusTextView"
+                android:onClick="operatorEvent"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvOne"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/numberActionButton"
+                android:gravity="center"
+                android:text="@string/OneTextView"
+                android:textColor="@color/white"
+                android:textSize="21sp"
+                android:onClick="numberEvent"/>
+
+            <TextView
+                android:id="@+id/tvTwo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/numberActionButton"
+                android:textColor="@color/white"
+                android:textSize="21sp"
+                android:gravity="center"
+                android:text="@string/TwoTextview"
+                android:onClick="numberEvent"/>
+
+            <TextView
+                android:id="@+id/tvThree"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/numberActionButton"
+                android:textColor="@color/white"
+                android:textSize="21sp"
+                android:gravity="center"
+                android:text="@string/ThreeTextView"
+                android:onClick="numberEvent"/>
+
+            <TextView
+                android:id="@+id/tvPlus"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/actionButton"
+                android:textColor="@color/white"
+                android:textSize="21sp"
+                android:gravity="center"
+                android:text="@string/PlusTextView"
+                android:onClick="operatorEvent"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvDot"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/numberActionButton"
+                android:gravity="center"
+                android:text="@string/DotTextView"
+                android:textColor="@color/white"
+                android:textSize="21sp"
+                android:onClick="numberEvent"/>
+
+            <TextView
+                android:id="@+id/tvZero"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/numberActionButton"
+                android:textColor="@color/white"
+                android:textSize="21sp"
+                android:gravity="center"
+                android:text="@string/ZeroTextView"
+                android:onClick="numberEvent"/>
+
+            <ImageView
+                android:id="@+id/tvBack"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/numberActionButton"
+                android:gravity="center"
+                android:scaleType="center"
+                android:src="@drawable/ic_baseline_backspace_24"
+                android:textColor="@color/white"
+                android:textSize="21sp"
+                android:contentDescription="@string/backspaceIV" />
+
+            <TextView
+                android:id="@+id/tvEquals"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/actionButton"
+                android:textColor="@color/white"
+                android:textSize="21sp"
+                android:gravity="center"
+                android:text="@string/equalTextView"
+                android:onClick="equalEvent"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

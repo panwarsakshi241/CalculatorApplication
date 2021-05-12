@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">My Calculator</string>
+    <string name="equalTextView">=</string>
+    <string name="ZeroTextView">0</string>
+    <string name="DotTextView">.</string>
+    <string name="PlusTextView">+</string>
+    <string name="ThreeTextView">3</string>
+    <string name="TwoTextview">2</string>
+    <string name="OneTextView">1</string>
+    <string name="MinusTextView">-</string>
+    <string name="SixTextView">6</string>
+    <string name="FiveTextView">5</string>
+    <string name="FourTextView">4</string>
+    <string name="MultiplyTextView">X</string>
+    <string name="NineTextView">9</string>
+    <string name="EightTextView">8</string>
+    <string name="SevenTextView">7</string>
+    <string name="DevideTextView">/</string>
+    <string name="CloseTextView">)</string>
+    <string name="OpenTextView">(</string>
+    <string name="cancelTextView">AC</string>
+    <string name="backspaceIV">BackSpace</string>
+</resources>
